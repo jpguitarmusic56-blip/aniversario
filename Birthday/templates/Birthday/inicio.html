@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Aniversário</title>
+
+    <style>
+
+        body
+        {
+
+            margin: 1.4em;
+
+            background-color: lightblue;
+
+            font-family: sans-serif;
+
+        }
+
+        .author
+        {
+
+            font-size: 0.9rem;
+
+            color: #333;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Feliz aniversário! 🎂</h1>
+
+    <p class="author">Desenvolvido por DevJPolyglot</p>
+
+    <h1>Você gostou?</h1>
+
+    <button id="sim">Sim</button>
+
+    <button id="nao">Não</button>
+
+    <audio id="musica">
+
+        <source src="/static/Birthday/music/dun-dun-dun-sound-effect-brass_8nFBccR.mp3" type="audio/mpeg">
+
+    </audio>
+
+    <script>
+
+        const botaoNao = document.getElementById("nao");
+
+        const botaoSim = document.getElementById("sim");
+
+        const musica = document.getElementById("musica");
+
+        botaoNao.addEventListener("click", function() {
+
+            botaoNao.style.position = "absolute";
+
+            botaoNao.style.left = Math.random() * 100 + "%";
+
+            botaoNao.style.top = Math.random() * 100 + "%";
+
+        });
+
+        botaoSim.addEventListener("click", function() {
+
+            musica.play();
+
+        });
+
+    </script>
+
+</body>
+
+</html>
+
